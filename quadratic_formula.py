@@ -22,3 +22,6 @@ print(Y3)
 # (4): a=1, b=0, c=1
 Y4 = quadratic_formula(1, 0, 1)
 print(Y4)
+
+# 以下をTERMINALに入力し、完了
+# C:/Users/kent2/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/python.exe c:/Users/kent2/OneDrive/デスクトップ/PG/BasicPython/quadratic_formula.py
