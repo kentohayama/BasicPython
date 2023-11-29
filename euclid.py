@@ -12,3 +12,4 @@ pairs = [(10, 20), (91, 14), (14, 91)]
 for pair in pairs:
     result = gcd(pair[0], pair[1])
     print(f"{pair}: {result}")
+    
