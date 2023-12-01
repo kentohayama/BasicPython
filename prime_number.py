@@ -14,6 +14,6 @@ for number in numbers:
         divisor += 1
 
     if prime:
-        print(f"{number}は素数です。")
-    else:
         print(f"{number}は素数ではありません。")
+    else:
+        print(f"{number}は素数です。")
