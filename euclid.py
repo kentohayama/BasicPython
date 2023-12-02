@@ -7,12 +7,13 @@ def gcd(a, b):
 # 組み合わせ
 pairs = [(10, 20), (91, 14), (14, 91)]
 
-# 各組み合わせに対して最大公約数を求め、互いに素かどうかを判定する
+# 各組み合わせに対して最大公約数を求め、その最大公約数が1かどうかで互いに素かどうかを判定する
 for pair in pairs:
     result = gcd(pair[0], pair[1])
-    is_coprime = result == 1
-    if is_coprime:
-        print(f"{pair}: 互いに素")
+    
+    if result == 1:
+        print(f"{pair}: 互いに素である")
     else:
         print(f"{pair}: 互いに素ではない")
+
 
