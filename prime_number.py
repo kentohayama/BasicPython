@@ -1,19 +1,22 @@
-# 61が素数でないことを確認
-# 10が素数であることを確認
 
-numbers = [61, 10]
+numbers = [61, 10, 2, 5]
 
 for number in numbers:
-    divisor = 2
-    prime = True
-
-    while divisor < number:
-        if number % divisor == 0:
-            prime = False
-            break
-        divisor += 1
-
-    if prime:
-        print(f"{number}は素数ではありません。")
+    if not isinstance(number, int) or number <= 1:
+        print("2以上の自然数を入力してください")
+    elif number == 2:
+        print(f"{number}は素数です")
     else:
-        print(f"{number}は素数です。")
+        divisor = 2
+        is_prime = True
+
+        while divisor < number:
+            if number % divisor == 0:
+                is_prime = False
+                break
+            divisor += 1
+
+        if is_prime:
+            print(f"{number}は素数です")
+        else:
+            print(f"{number}は素数ではありません")
