@@ -1,4 +1,3 @@
-
 numbers = [61, 10, 2, 5]
 
 for number in numbers:
